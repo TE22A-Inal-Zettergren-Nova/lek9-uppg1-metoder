@@ -5,6 +5,7 @@ public class App {
         double summa = omkretsCirkel(2);
         System.out.println("Omkretsen av cirkeln är " + summa);
         ritaLinje(23);
+        ritaRektangel(8, 20);
     }
 
      static double omkretsCirkel(double radie)
@@ -17,6 +18,19 @@ public class App {
         for(;längd!=0; längd--)
         {
             System.out.print("-");
+        }
+    }
+
+    static void ritaRektangel(int höjd, int bredd){
+        
+        for(int i=0; i<höjd;i++)
+        {
+            System.out.println(" ");
+            for(int j=0; j<bredd; j++)
+            {
+
+            System.out.print("*");
+            }
         }
     }
 }
