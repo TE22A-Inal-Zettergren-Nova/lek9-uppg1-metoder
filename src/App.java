@@ -6,6 +6,8 @@ public class App {
         System.out.println("Omkretsen av cirkeln är " + summa);
         ritaLinje(23);
         ritaRektangel(8, 20);
+        System.out.println("Är talet positivt? " + tal_positivt(2.5));
+ 
     }
 
      static double omkretsCirkel(double radie)
@@ -32,5 +34,18 @@ public class App {
             System.out.print("*");
             }
         }
+    }
+
+    static boolean tal_positivt(double tal) {
+        
+
+        if(tal>0){
+            return true;
+        }
+        else{
+            return false;
+        } 
+        
+
     }
 }
